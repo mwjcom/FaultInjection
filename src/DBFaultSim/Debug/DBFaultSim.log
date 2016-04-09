@@ -1,0 +1,17 @@
+﻿Build started 2016/4/9 19:46:25.
+     1>Project "D:\Other\FaultInjection\src\DBFaultSim\DBFaultSim.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\DBFaultSim.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         DBFaultSim.vcxproj -> D:\Other\FaultInjection\src\DBFaultSim\..\..\bin\x86\debug\DBFaultSimd.dll
+       FinalizeBuildStatus:
+         Deleting file "Debug\DBFaultSim.unsuccessfulbuild".
+         Touching "Debug\DBFaultSim.lastbuildstate".
+     1>Done Building Project "D:\Other\FaultInjection\src\DBFaultSim\DBFaultSim.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.07
