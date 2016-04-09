@@ -1,0 +1,30 @@
+#-------------------------------------------------------------------------
+#	Altova_Dll_Xerces_nomfc
+#
+#	2007-9-12 ZhibingHong
+#
+#	Altova_Dll_Xerces_nomfc模块在Linux下编译Make文件
+#
+#	HollySys Copyright (C) 2005-2008
+#-------------------------------------------------------------------------
+
+libAltova_Dll_Xerces_nomfc.so:AltovaException.o SchemaTypes.o SchemaTypeNumber.o SchemaTypeCalendar.o SchemaTypeBinary.o SchemaTypeString.o
+	g++ -g -shared -o ../../../PublicProject/Debug/bin/libAltova_Dll_Xerces_nomfc.so Debug/AltovaException.o Debug/SchemaTypes.o Debug/SchemaTypeNumber.o Debug/SchemaTypeCalendar.o Debug/SchemaTypeBinary.o Debug/SchemaTypeString.o
+	
+AltovaException.o:AltovaException.h AltovaException.cpp Altova.h SchemaTypes.h AltovaException.h
+	g++ -c -g -o Debug/AltovaException.o AltovaException.cpp
+
+SchemaTypes.o:SchemaTypes.h SchemaTypes.cpp Altova.h AltovaException.h SchemaTypeNumber.h SchemaTypeCalendar.h SchemaTypeBinary.h
+	g++ -c -g -o Debug/SchemaTypes.o SchemaTypes.cpp
+	
+SchemaTypeString.o:SchemaTypeString.h SchemaTypeString.cpp SchemaTypes.h SchemaTypeNumber.h SchemaTypeCalendar.h Altova.h AltovaException.h
+	g++ -c -g -o Debug/SchemaTypeString.o SchemaTypeString.cpp
+
+SchemaTypeNumber.o:SchemaTypeNumber.h SchemaTypeNumber.cpp SchemaTypes.h Altova.h AltovaException.h
+	g++ -c -g -o Debug/SchemaTypeNumber.o SchemaTypeNumber.cpp
+	
+SchemaTypeCalendar.o:SchemaTypeCalendar.h SchemaTypeCalendar.cpp SchemaTypes.h Altova.h AltovaException.h
+	g++ -c -g -o Debug/SchemaTypeCalendar.o SchemaTypeCalendar.cpp
+	
+SchemaTypeBinary.o:SchemaTypeBinary.h SchemaTypeBinary.cpp SchemaTypes.h Altova.h AltovaException.h SchemaTypeString.h
+	g++ -c -g -o Debug/SchemaTypeBinary.o SchemaTypeBinary.cpp

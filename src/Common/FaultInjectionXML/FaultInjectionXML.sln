@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FaultInjectionXML", "..\FaultInjectionXML\FaultInjectionXML.vcproj", "{3D4B5238-A0F6-A546-AA76-E35AAB2F252B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FaultInjectionXMLTest", "..\FaultInjectionXMLTest\FaultInjectionXMLTest.vcproj", "{6BB1C887-2251-7F47-ABC9-D8CEAB057842}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3D4B5238-A0F6-A546-AA76-E35AAB2F252B} = {3D4B5238-A0F6-A546-AA76-E35AAB2F252B}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3D4B5238-A0F6-A546-AA76-E35AAB2F252B}.Debug.ActiveCfg = Debug|Win32
+		{3D4B5238-A0F6-A546-AA76-E35AAB2F252B}.Debug.Build.0 = Debug|Win32
+		{3D4B5238-A0F6-A546-AA76-E35AAB2F252B}.Release.ActiveCfg = Release|Win32
+		{3D4B5238-A0F6-A546-AA76-E35AAB2F252B}.Release.Build.0 = Release|Win32
+		{6BB1C887-2251-7F47-ABC9-D8CEAB057842}.Debug.ActiveCfg = Debug|Win32
+		{6BB1C887-2251-7F47-ABC9-D8CEAB057842}.Debug.Build.0 = Debug|Win32
+		{6BB1C887-2251-7F47-ABC9-D8CEAB057842}.Release.ActiveCfg = Release|Win32
+		{6BB1C887-2251-7F47-ABC9-D8CEAB057842}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
